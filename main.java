@@ -1,20 +1,19 @@
 
-
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
-
 public class main {
-	
 public static void main(String[] args) {
+	ARABA araba1 = new ARABA();
+	araba1.setColor("siyah");
+	araba1.setModel("camaro");
+	araba1.setEngine(6.0);
+	araba1.setDoors(2);
 	
-	Point p1 = new Point();
-	p1.x = 5;
-	p1.y = -2;
 	
-	Point p2 = new Point();
-	p2.x = -4;
-	p2.y = 5;
 	
-	System.out.println("("+p1.x+","+p1.y+")");
-	System.out.println("("+p2.x+","+p2.y+")");
+	System.out.println("arabanýn rengi "+araba1.getColor());
+	System.out.println("arabanýn modeli "+araba1.getModel());
+	System.out.println("arabanýn motoru "+araba1.getEngine());
+	System.out.println("arabanýn kapý sayýsý "+araba1.getDoors());
+	araba1.start();
+	araba1.stop();
 }
 }
