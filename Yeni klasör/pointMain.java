@@ -1,37 +1,24 @@
 
-public class pointMain {
+public class PointMain {
+
 	public static void main(String[] args) {
 		
-		Point point1 = new Point();
-		point1.x = 5;
-		point1.y = -7;
+		Point p1=new Point(7, 2);
 		
-		Point point2 = new Point();
-		point2.x = -3;
-		point2.y = 4;
-		/*
-		System.out.println("("+point1.x+","+point1.y+")");
-		double dist = Math.sqrt(point1.x * point1.x + point1.y * point1.y);
-		System.out.println("distance from orijin ="+dist);
-		*/
-		/*
-		System.out.println("("+point2.x+","+point2.y+")");
-		double dist2 = Math.sqrt(point2.x * point2.x + point2.y * point2.y);
-		System.out.println("distance from orijin ="+dist2);
-		*/
+		Point p2=new Point(4, 3);
+		//p1(7,2) orijine uzaklýðý :
+		System.out.println("p1("+p1.getX()+","+p1.getY()+")");
+		System.out.println("orijine uzaklýðý :"+p1.distanceFromOrigin());
 		
-		//translate new location
-		point1.x +=10;
-		point1.y +=6;
-		point2.x +=1;
-		point2.y +=7;
+		System.out.println("p2("+p2.getX()+","+p2.getY()+")");
+		System.out.println("orijine uzaklýðý :"+p2.distanceFromOrigin());
+	
+		p1.translate(11, 6);
+		System.out.println("p1("+p1.getX()+","+p1.getY()+")");
+		System.out.println("orijine uzaklýðý :"+p1.distanceFromOrigin());
 		
-		System.out.println("("+point1.x+","+point1.y+")");
-		double dist = Math.sqrt(point1.x * point1.x + point1.y * point1.y);
-		System.out.println("distance from orijin ="+dist);
-		
-		System.out.println("("+point2.x+","+point2.y+")");
-		double dist2 = Math.sqrt(point2.x * point2.x + point2.y * point2.y);
-		System.out.println("distance from orijin ="+dist2);
+		System.out.println("p1 ="+p1); //(x,y)
+		System.out.println();
 	}
+	
 }
