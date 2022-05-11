@@ -9,7 +9,7 @@ public class adres {
 		adr.cadde = "SEHÝTOÐLU";
 		adr.blok  = "yedi";
 		adr.no    = "iki";
-		adr.sehir = "OSMANÝYEe";
+		adr.sehir = "OSMANÝYE";
 		adr.ulke  = "Türkiye";
 		ogr.oAdres = adr; 
 
